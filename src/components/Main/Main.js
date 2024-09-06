@@ -38,12 +38,14 @@ const ProfilePage = () => {
 
   return (
     <Container className={styles.page_container}>
-      <nav className={styles.navbar}>
-        <h1>Dashboard</h1>
-        <Button className={styles.logout_btn} onClick={handleLogout}>
-          Logout
-        </Button>
-      </nav>
+      		<div className={styles.main_container}>
+			<nav className={styles.navbar} style={{backgroundColor: "#3bb19b"}}>
+				<h1>Dashboard</h1>
+				<button className={styles.white_btn} onClick={handleLogout}>
+					Logout
+				</button>
+			</nav>
+		</div>
 
       <div className={styles.profile_container} style={{display: "flex"}}>
         <Form className={styles.profile_form}>
